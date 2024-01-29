@@ -1,0 +1,106 @@
+@import url("bootstrap.css");
+@import url("bootstrap.rtl.css");
+@import url("bootstrap-grid.css");
+@import url("bootstrap-grid.rtl.css");
+@import url("bootstrap-reboot.css");
+@import url("bootstrap-reboot.rtl.css");
+@import url("bootstrap-utilities.css");
+@import url("bootstrap-utilities.rtl.css");
+@import url("fonts.css");
+
+body {
+    font-family: 'RobotoSlab Regular';
+    color: #303335;
+}
+
+h1 {
+    font-family: 'RobotoSlab Bold';
+    text-transform: uppercase;
+    text-align: center;
+    padding: 40px 0 30px 0;
+    margin: unset;
+}
+
+.navbar {
+    background: transparent !important;
+}
+
+#main, #contacts {
+    background: url("../images/background.jpg") 100%;
+}
+
+#main .navbar-brand {
+    padding: unset;
+    margin: unset;
+    width: 262px;
+}
+
+#main .navbar-brand img {
+    width: 100%;
+}
+
+#contacts {
+    font-family: 'RobotoSlab Thin';
+}
+
+#contacts .subtitle {
+    font-family: 'RobotoSlab Regular';
+    margin-bottom: 8px;
+}
+
+
+#contacts p {
+    margin: unset;
+    font-size: 24px;
+}
+
+
+
+#contacts .info-main,
+#contacts .info-additionally,
+#contacts .info-feedback {
+    margin-bottom: 25px;
+}
+
+#contacts .info-feedback form {
+    border: 2px #303335 solid;
+    padding: 25px;
+    text-align: right;
+}
+
+#contacts .info-feedback form input:focus,
+#contacts .info-feedback form textarea:focus {
+    box-shadow: unset;
+}
+
+#contacts .info-feedback form input,
+#contacts .info-feedback form textarea,
+#contacts .info-feedback form button {
+    border-radius: unset;
+    border: 2px #303335 solid;
+    background: transparent;
+}
+
+#contacts .map-wrapper {
+    border: 10px solid;
+    border-image-slice: 1;
+    border-width: 5px;
+    border-image-source: linear-gradient(to left, #686cab, #d26456);
+    padding: 20px;
+}
+
+#contacts .footer {
+    text-align: center;
+    padding: 30px 0;
+}
+
+svg polygon {
+    stroke-dasharray: 50;
+    animation: dashoffset 1.5s linear infinite;
+}
+
+@keyframes dashoffset {
+    to {
+        stroke-dashoffset: 100;
+    }
+}
