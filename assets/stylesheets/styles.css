@@ -16,7 +16,7 @@ body {
 h1 {
     font-family: 'RobotoSlab Bold';
     text-transform: uppercase;
-    padding: 40px 0 30px 0;
+    padding: 50px 0;
     margin: unset;
 }
 
@@ -36,6 +36,70 @@ h1 {
 
 #main .navbar-brand img {
     width: 100%;
+}
+
+#support {
+    background: url("../images/support-bg.png") top 10% center;
+    background-size: cover;
+    position: relative;
+    min-height: 750px;
+    color: #ffffff;
+}
+
+#support p {
+    font-size: 16px;
+}
+
+#support .subtitle {
+    font-family: 'RobotoSlab Regular';
+    font-size: 24px;
+}
+
+#support .instructions,
+#support .info {
+    margin-bottom: 50px;
+}
+
+#support .your-question {
+    clip-path: polygon(0 0, 90% 0, 100% 50%, 10% 50%);
+    background: rgb(226,14,23);
+    background: linear-gradient(90deg, rgba(180,19,84,1) 0%, rgba(226,14,23,1) 100%);
+    width: 50%;
+    height: 80px;
+    text-align: center;
+}
+
+#support .your-question p {
+    font-family: 'RobotoSlab Bold';
+    font-size: 22px;
+    line-height: 35px;
+}
+
+#support .wrapper-left {
+    width: 53%;
+    height: 750px;
+    clip-path: polygon(0 0, 50% 0, 100% 100%, 0% 100%);
+    background: rgb(73,65,145);
+    background: linear-gradient(90deg, rgba(73,65,145,1) 0%, rgba(97,196,235,1) 100%);
+    position: absolute;
+    opacity: 85%;
+}
+
+#support .wrapper-right {
+    width: 71.1%;
+    height: 700px;
+    clip-path: polygon(0 0, 100% 0, 100% 100%, 34.8% 100%);
+    background: rgb(226,14,23);
+    background: linear-gradient(90deg, rgba(226,14,23,1) 0%, rgba(180,19,84,1) 100%);
+    position: absolute;
+    top: 25px;
+    right: 25px;
+    opacity: 85%;
+}
+
+#support .container {
+    position: relative;
+    z-index: 1;
 }
 
 #contacts {
