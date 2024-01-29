@@ -16,7 +16,6 @@ body {
 h1 {
     font-family: 'RobotoSlab Bold';
     text-transform: uppercase;
-    text-align: center;
     padding: 40px 0 30px 0;
     margin: unset;
 }
@@ -43,18 +42,19 @@ h1 {
     font-family: 'RobotoSlab Thin';
 }
 
+#contacts h1 {
+    text-align: center;
+}
+
 #contacts .subtitle {
     font-family: 'RobotoSlab Regular';
     margin-bottom: 8px;
 }
 
-
 #contacts p {
     margin: unset;
     font-size: 24px;
 }
-
-
 
 #contacts .info-main,
 #contacts .info-additionally,
