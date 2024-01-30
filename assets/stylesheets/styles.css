@@ -62,8 +62,8 @@ h1 {
 
 #support .your-question {
     clip-path: polygon(0 0, 90% 0, 100% 50%, 10% 50%);
-    background: rgb(226,14,23);
-    background: linear-gradient(90deg, rgba(180,19,84,1) 0%, rgba(226,14,23,1) 100%);
+    background: rgb(226, 14, 23);
+    background: linear-gradient(90deg, rgba(180, 19, 84, 1) 0%, rgba(226, 14, 23, 1) 100%);
     width: 50%;
     height: 80px;
     text-align: center;
@@ -79,8 +79,8 @@ h1 {
     width: 53%;
     height: 750px;
     clip-path: polygon(0 0, 50% 0, 100% 100%, 0% 100%);
-    background: rgb(73,65,145);
-    background: linear-gradient(90deg, rgba(73,65,145,1) 0%, rgba(97,196,235,1) 100%);
+    background: rgb(73, 65, 145);
+    background: linear-gradient(90deg, rgba(73, 65, 145, 1) 0%, rgba(97, 196, 235, 1) 100%);
     position: absolute;
     opacity: 85%;
 }
@@ -89,8 +89,8 @@ h1 {
     width: 71.1%;
     height: 700px;
     clip-path: polygon(0 0, 100% 0, 100% 100%, 34.8% 100%);
-    background: rgb(226,14,23);
-    background: linear-gradient(90deg, rgba(226,14,23,1) 60%, rgba(180,19,84,1) 100%);
+    background: rgb(226, 14, 23);
+    background: linear-gradient(90deg, rgba(226, 14, 23, 1) 60%, rgba(180, 19, 84, 1) 100%);
     position: absolute;
     top: 25px;
     right: 25px;
