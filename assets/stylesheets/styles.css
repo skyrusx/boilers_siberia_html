@@ -115,17 +115,16 @@ h1 {
 }
 
 #recommend .wrapper-left {
-    width: 72.7%;
+    width: 71.1%;
     height: 700px;
-    clip-path: polygon(0 0, 100% 0, 66% 100%, 0 100%);
+    clip-path: polygon(0 0, 100% 0, 65.2% 100%, 0 100%);
 
     background: rgb(226, 14, 23);
     background: linear-gradient(90deg, rgba(180, 19, 84, 1) 0%, rgba(226, 14, 23, 1) 100%);
     position: absolute;
     top: 25px;
-    right: 25px;
+    left: 25px;
     opacity: 85%;
-    left: 0;
 }
 
 #recommend .wrapper-right {
