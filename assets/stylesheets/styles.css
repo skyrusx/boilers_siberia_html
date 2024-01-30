@@ -23,6 +23,27 @@ h1 {
     margin: unset;
 }
 
+.figure-parallelogram {
+    text-align: center;
+    color: white;
+}
+
+.figure-parallelogram p {
+    width: 263px;
+    height: 80px;
+    clip-path: polygon(0 0, 90% 0, 100% 50%, 10% 50%);
+    display: inline-block;
+    font-family: 'RobotoSlab Bold';
+    font-size: 22px !important;
+    line-height: 35px;
+}
+
+#stocks .and-plus p,
+#reviews .quick-order p {
+    background: rgb(97, 196, 235);
+    background: linear-gradient(90deg, rgba(97, 196, 235, 1) 0%, rgba(73, 65, 145, 1) 100%);
+}
+
 /* Common End */
 
 /* Main */
@@ -31,7 +52,7 @@ h1 {
     background: transparent !important;
 }
 
-#main, #contacts, #stocks {
+#main, #contacts, #stocks, #reviews {
     background: url("../images/background.jpg") 100%;
 }
 
@@ -46,6 +67,42 @@ h1 {
 }
 
 /* Main End */
+
+/* Reviews */
+
+#reviews .item-review {
+    background: rgb(255, 255, 255);
+    background: linear-gradient(90deg, rgba(255, 255, 255, 0) 0%, rgba(0, 0, 0, 0.2) 100%);
+    padding: 35px;
+    margin-bottom: 50px;
+}
+
+#reviews .item-review .user-avatar,
+#reviews .item-review .user-name {
+    display: inline-block;
+    width: 49%;
+}
+
+#reviews .item-review .user-avatar {
+    text-align: center;
+}
+
+#reviews .item-review .user-avatar img {
+    width: 100%;
+    border-radius: 50%;
+}
+
+#reviews .item-review .user-name {
+    vertical-align: middle;
+    font-size: 20px;
+}
+
+#reviews .item-review .item-review__body {
+    font-family: 'RobotoSlab Thin';
+    margin: 20px 0;
+}
+
+/* Reviews End */
 
 /* Recommend */
 
@@ -132,24 +189,6 @@ h1 {
     background: linear-gradient(90deg, rgba(97, 196, 235, 1) 0%, rgba(73, 65, 145, 1) 100%);
 }
 
-#stocks .and-plus {
-    text-align: center;
-    color: white;
-}
-
-#stocks .and-plus p {
-    width: 263px;
-    height: 80px;
-    clip-path: polygon(0 0, 90% 0, 100% 50%, 10% 50%);
-    background: rgb(97, 196, 235);
-    background: linear-gradient(90deg, rgba(97, 196, 235, 1) 0%, rgba(73, 65, 145, 1) 100%);
-    display: inline-block;
-
-    font-family: 'RobotoSlab Bold';
-    font-size: 22px;
-    line-height: 35px;
-}
-
 /* Stocks End */
 
 /* Support */
@@ -177,18 +216,13 @@ h1 {
 }
 
 #support .your-question {
-    clip-path: polygon(0 0, 90% 0, 100% 50%, 10% 50%);
-    background: rgb(226, 14, 23);
-    background: linear-gradient(90deg, rgba(180, 19, 84, 1) 0%, rgba(226, 14, 23, 1) 100%);
-    width: 50%;
-    height: 80px;
-    text-align: center;
+    text-align: left;
 }
 
 #support .your-question p {
-    font-family: 'RobotoSlab Bold';
-    font-size: 22px;
-    line-height: 35px;
+    background: rgb(226, 14, 23);
+    background: linear-gradient(90deg, rgba(180, 19, 84, 1) 0%, rgba(226, 14, 23, 1) 100%);
+    text-align: center;
 }
 
 #support .wrapper-left {
