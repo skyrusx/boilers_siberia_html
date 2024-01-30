@@ -47,6 +47,66 @@ h1 {
 
 /* Main End */
 
+/* Recommend */
+
+#recommend {
+    background: url("../images/recommend-bg.jpg") center;
+    background-size: cover;
+    position: relative;
+    min-height: 750px;
+    color: #ffffff;
+}
+
+#recommend .wrapper-left {
+    width: 72.7%;
+    height: 700px;
+    clip-path: polygon(0 0, 100% 0, 66% 100%, 0 100%);
+
+    background: rgb(226, 14, 23);
+    background: linear-gradient(90deg, rgba(226, 14, 23, 1) 60%, rgba(180, 19, 84, 1) 100%);
+    position: absolute;
+    top: 25px;
+    right: 25px;
+    opacity: 85%;
+    left: 0;
+}
+
+#recommend .wrapper-right {
+    width: 53%;
+    height: 750px;
+    clip-path: polygon(50% 0, 100% 0, 100% 100%, 0 100%);
+    background: rgb(73, 65, 145);
+    background: linear-gradient(90deg, rgba(97, 196, 235, 1) 0%, rgba(73, 65, 145, 1) 100%);
+    position: absolute;
+    opacity: 85%;
+    right: 0;
+}
+
+#recommend h1 {
+    text-align: center;
+}
+
+#recommend h1 span {
+    display: block;
+}
+
+#recommend .container {
+    position: relative;
+    z-index: 1;
+}
+
+#recommend .item-advantage {
+    text-align: center;
+}
+
+#recommend .subtitle {
+    font-family: 'RobotoSlab Bold';
+    font-size: 24px;
+    margin: unset;
+}
+
+/* Recommend End */
+
 /* Stocks */
 
 #stocks h1 {
