@@ -38,32 +38,254 @@ h1 {
     line-height: 35px;
 }
 
+#support .your-question p,
+#main .choose-boiler p {
+    background: rgb(226, 14, 23);
+    background: linear-gradient(90deg, rgba(180, 19, 84, 1) 0%, rgba(226, 14, 23, 1) 100%);
+    text-align: center;
+}
+
 #stocks .and-plus p,
 #reviews .quick-order p {
     background: rgb(97, 196, 235);
     background: linear-gradient(90deg, rgba(97, 196, 235, 1) 0%, rgba(73, 65, 145, 1) 100%);
 }
 
-/* Common End */
-
-/* Main */
-
-.navbar {
-    background: transparent !important;
-}
-
 #main, #contacts, #stocks, #reviews {
     background: url("../images/background.jpg") 100%;
 }
 
+/* Common End */
+
+/* Main */
+
+#main {
+    position: relative;
+    height: 100vh;
+}
+
+#main .red-lines__bg {
+    background: url("../images/red-lines__bg.png") top left no-repeat;
+    width: 100%;
+    /*height: 750px;*/
+    height: 100vh;
+    position: absolute;
+    background-size: contain;
+}
+
+#main .navbar {
+    background: transparent !important;
+}
+
 #main .navbar-brand {
     padding: unset;
-    margin: unset;
-    width: 262px;
+    width: 230px;
+    margin: 0 0 0 20px;
 }
 
 #main .navbar-brand img {
     width: 100%;
+}
+
+#main .navbar .navbar-nav .nav-item.cart {
+    background: rgb(97, 196, 235);
+    background: linear-gradient(90deg, rgba(97, 196, 235, 1) 0%, rgba(73, 65, 145, 1) 100%);
+    border-radius: 50%;
+    margin-left: 20px;
+    position: relative;
+}
+
+#main .navbar .navbar-nav .nav-item.cart .nav-link {
+    background-image: url("../images/icon-cart.png");
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: 30px;
+    padding: 25px;
+}
+
+#main .navbar .navbar-nav .nav-item.cart .nav-link .counter {
+    position: absolute;
+
+    font-family: 'RobotoSlab Thin';
+    background-color: #E52521;
+    border-radius: 50%;
+    width: 15px;
+    height: 15px;
+    text-align: center;
+    vertical-align: middle;
+    color: #fff;
+    line-height: 15px;
+    font-size: 12px;
+    top: 10px;
+    right: 10px;
+}
+
+#main .navbar .navbar-nav .nav-item .nav-link {
+    color: #616365;
+    text-transform: uppercase;
+    font-family: 'RobotoSlab Bold';
+    padding-left: 20px;
+    padding-right: 20px;
+    font-size: 20px;
+}
+
+#main .navbar .navbar-nav .nav-item .nav-link.active,
+#main .navbar .navbar-nav .nav-item .nav-link:hover {
+    color: black;
+}
+
+#main .col-6:first-child {
+    position: relative;
+}
+
+#main .main-title {
+    margin: 35px 0 0 80px;
+}
+
+#main .main-title p {
+    margin: unset;
+    font-family: 'RobotoSlab Bold';
+    text-transform: uppercase;
+    line-height: 50px;
+    font-size: 45px;
+}
+
+#main .main-description {
+    padding: 60px 0 0 80px;
+    background: url("../images/triangle-white.png") no-repeat;
+    background-size: contain;
+    background-position-x: 35px;
+    background-position-y: 40px;
+}
+
+#main .main-description p {
+    font-family: 'RobotoSlab Thin';
+    font-size: 30px;
+    line-height: 34px;
+    margin: unset;
+}
+
+#main .choose-boiler {
+    text-align: left;
+    margin: 50px 0 0 100px;
+}
+
+#main .main-triangle__red {
+    clip-path: polygon(50% 0, 50% 0, 100% 100%, 0 100%);
+    background: rgb(226, 14, 23);
+    background: linear-gradient(90deg, rgba(226, 14, 23, 1) 0%, rgba(180, 19, 84, 1) 100%);
+
+    position: absolute;
+    right: 75px;
+    width: 85px;
+    height: 75px;
+    bottom: 30px;
+}
+
+#main .main-contacts {
+    font-family: 'RobotoSlab Thin';
+    font-size: 24px;
+    margin-top: 35px;
+    position: relative;
+    z-index: 1;
+}
+
+#main .main-contacts .email,
+#main .main-contacts .phone,
+#main .main-contacts .address {
+    position: relative;
+    margin-bottom: 5px;
+}
+
+#main .main-contacts .email:before {
+    background-image: url("../images/icon-email.png");
+}
+
+#main .main-contacts .phone:before {
+    background-image: url("../images/icon-phone.png");
+}
+
+#main .main-contacts .address:before {
+    background-image: url("../images/icon-address.png");
+}
+
+#main .main-contacts div:before {
+    content: " ";
+    background-repeat: no-repeat;
+    background-size: contain;
+    position: absolute;
+    width: 35px;
+    height: 35px;
+    left: -50px;
+    top: 3px;
+}
+
+#main .geliss {
+    background: url("../images/geliss.png") no-repeat;
+    position: absolute;
+    width: 560px;
+    height: 560px;
+    background-size: contain;
+    bottom: 0;
+    opacity: 85%;
+    right: 180px;
+    z-index: 0;
+}
+
+#main .coal {
+    background: url("../images/coal.png") no-repeat;
+    background-size: contain;
+    position: absolute;
+    width: 300px;
+    height: 260px;
+    z-index: 1;
+    right: 0;
+    bottom: 0;
+}
+
+#main .right-elem {
+    clip-path: polygon(100% 0, 100% 0, 100% 100%, 0 100%);
+    background: rgb(97, 196, 235);
+    background: linear-gradient(90deg, rgba(97, 196, 235, 1) 0%, rgba(73, 65, 145, 1) 100%);
+
+    width: 230px;
+    height: 400px;
+    position: absolute;
+    right: 0;
+    bottom: 0;
+    z-index: 1;
+    opacity: 85%;
+}
+
+#main .white-line {
+    background: url("../images/white-line.png") no-repeat;
+    background-size: contain;
+    position: absolute;
+    width: 100px;
+    height: 155px;
+    right: 200px;
+    bottom: 215px;
+    z-index: 1;
+}
+
+#main .red-line__right {
+    background: url("../images/red-line_short.png") no-repeat;
+    background-size: contain;
+    position: absolute;
+    width: 144px;
+    height: 225px;
+    right: 125px;
+    bottom: 110px;
+}
+
+#main .red-line__left {
+    background: url("../images/red-line_short.png") no-repeat;
+    background-size: contain;
+    position: absolute;
+    width: 144px;
+    height: 225px;
+    right: 350px;
+    bottom: 90px;
 }
 
 /* Main End */
@@ -216,12 +438,6 @@ h1 {
 
 #support .your-question {
     text-align: left;
-}
-
-#support .your-question p {
-    background: rgb(226, 14, 23);
-    background: linear-gradient(90deg, rgba(180, 19, 84, 1) 0%, rgba(226, 14, 23, 1) 100%);
-    text-align: center;
 }
 
 #support .wrapper-left {
