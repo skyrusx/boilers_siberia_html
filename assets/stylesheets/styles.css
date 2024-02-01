@@ -39,7 +39,8 @@ h1 {
 }
 
 #support .your-question p,
-#main .choose-boiler p {
+#main .choose-boiler p,
+#catalog .get-feedback p {
     background: rgb(226, 14, 23);
     background: linear-gradient(90deg, rgba(180, 19, 84, 1) 0%, rgba(226, 14, 23, 1) 100%);
     text-align: center;
@@ -343,10 +344,97 @@ h1 {
 #about .item .item-info {
     font-family: 'RobotoSlab Thin';
     font-size: 20px;
-
 }
 
 /* About End */
+
+/* Catalog */
+
+#catalog {
+    background: url("../images/catalog-bg.jpg") no-repeat;
+    background-size: cover;
+    position: relative;
+}
+
+#catalog .wrapper-left {
+    clip-path: polygon(0 0, 100% 0, 63% 100%, 0 100%);
+    background: rgb(226, 14, 23);
+    background: linear-gradient(90deg, rgba(180, 19, 84, 1) 0%, rgba(226, 14, 23, 1) 100%);
+    opacity: 85%;
+
+    position: absolute;
+    top: 25px;
+    left: 25px;
+
+    width: 68%;
+    height: calc(100% - 50px);
+}
+
+#catalog .wrapper-right {
+    clip-path: polygon(60% 0, 100% 0, 100% 100%, 25% 100%);
+    background: rgb(73, 65, 145);
+    background: linear-gradient(90deg, rgba(97, 196, 235, 1) 0%, rgba(73, 65, 145, 1) 100%);
+    opacity: 85%;
+
+    position: absolute;
+    right: 0;
+    top: 0;
+    z-index: 0;
+
+    width: 75%;
+    height: 100%;
+}
+
+#catalog .container {
+    position: relative;
+    z-index: 1;
+}
+
+#catalog h1 {
+    color: white;
+}
+
+#catalog .list-products .product-block,
+#catalog .list-services .service-block {
+    display: block;
+    text-align: center;
+    background-color: #dfdfe0;
+    padding: 25px 25px 10px 25px;
+    margin: 15px 15px 30px 15px;
+    text-decoration: none;
+}
+
+#catalog .list-products .product-block .product-image img,
+#catalog .list-services .service-block .service-image img {
+    width: 100%;
+}
+
+#catalog .list-products .product-block .product-title,
+#catalog .list-services .service-block .service-title {
+    color: #303335;
+    text-transform: uppercase;
+    font-size: 22px;
+    margin-top: 10px;
+}
+
+#catalog .list-services .service-block .service-title {
+    min-height: 67px;
+}
+
+#catalog .list-products .product-block .product-more {
+    color: #d96a69;
+    text-transform: lowercase;
+}
+
+#catalog .get-feedback p {
+    clip-path: polygon(0 0, 95% 0, 100% 50%, 5% 50%);
+    width: 45%;
+    height: 100px;
+    line-height: 50px;
+    font-size: 30px !important;
+}
+
+/* Catalog End */
 
 /* Reviews */
 
