@@ -28,7 +28,8 @@ h1 {
     color: white;
 }
 
-.figure-parallelogram p {
+.figure-parallelogram p,
+.figure-parallelogram a {
     width: 263px;
     height: 80px;
     clip-path: polygon(0 0, 90% 0, 100% 50%, 10% 50%);
@@ -36,14 +37,21 @@ h1 {
     font-family: 'RobotoSlab Bold';
     font-size: 22px !important;
     line-height: 35px;
+    color: white;
+    text-decoration: none;
+}
+
+.figure-parallelogram a:hover {
+    color: #cccccc;
 }
 
 #support .your-question p,
-#main .choose-boiler p,
+#main .choose-boiler a,
 #catalog .get-feedback p {
     background: rgb(226, 14, 23);
     background: linear-gradient(90deg, rgba(180, 19, 84, 1) 0%, rgba(226, 14, 23, 1) 100%);
     text-align: center;
+    display: block;
 }
 
 #stocks .and-plus p,
