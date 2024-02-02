@@ -64,7 +64,7 @@ h1 {
     background: url("../images/background.jpg") 100%;
 }
 
-#main, #about, #reviews {
+#main, #about, #reviews, #recommend {
     position: relative;
     height: 100vh;
 }
@@ -370,7 +370,7 @@ h1 {
     background-size: cover;
     position: absolute;
     right: 120px;
-    top: -15px;
+    top: -25px;
     width: 85px;
     height: 75px;
     z-index: 1;
@@ -591,11 +591,25 @@ h1 {
     color: #ffffff;
 }
 
+#recommend .recommend-before {
+    background: url("../images/catalog-before.png") no-repeat;
+    background-size: cover;
+    position: absolute;
+    top: -25px;
+    width: 85px;
+    height: 75px;
+    z-index: 1;
+
+    left: 0;
+    right: 0;
+    margin-left: auto;
+    margin-right: auto;
+}
+
 #recommend .wrapper-left {
     width: 71.1%;
-    height: 700px;
+    height: calc(100vh - 50px);
     clip-path: polygon(0 0, 100% 0, 65.2% 100%, 0 100%);
-
     background: rgb(226, 14, 23);
     background: linear-gradient(90deg, rgba(180, 19, 84, 1) 0%, rgba(226, 14, 23, 1) 100%);
     position: absolute;
@@ -606,7 +620,7 @@ h1 {
 
 #recommend .wrapper-right {
     width: 53%;
-    height: 750px;
+    height: 100vh;
     clip-path: polygon(50% 0, 100% 0, 100% 100%, 0 100%);
     background: rgb(73, 65, 145);
     background: linear-gradient(90deg, rgba(97, 196, 235, 1) 0%, rgba(73, 65, 145, 1) 100%);
