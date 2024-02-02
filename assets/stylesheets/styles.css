@@ -55,7 +55,7 @@ h1 {
 }
 
 #stocks .and-plus p,
-#reviews .quick-order p {
+#reviews .quick-order a {
     background: rgb(97, 196, 235);
     background: linear-gradient(90deg, rgba(97, 196, 235, 1) 0%, rgba(73, 65, 145, 1) 100%);
 }
@@ -64,14 +64,19 @@ h1 {
     background: url("../images/background.jpg") 100%;
 }
 
-/* Common End */
-
-/* Main */
-
-#main {
+#main, #about, #reviews {
     position: relative;
     height: 100vh;
 }
+
+#about .list-items,
+#reviews .list-items {
+    margin: 60px 0;
+}
+
+/* Common End */
+
+/* Main */
 
 #main .red-lines__bg {
     background: url("../images/red-lines__bg.png") top left no-repeat;
@@ -301,11 +306,6 @@ h1 {
 
 /* About */
 
-#about {
-    position: relative;
-    height: 100vh;
-}
-
 #about .streak {
     background: url("../images/about-redline.png") no-repeat;
     background-size: contain;
@@ -314,10 +314,6 @@ h1 {
     height: 550px;
     top: 0;
     right: 0;
-}
-
-#about .list-items {
-    margin: 60px 0;
 }
 
 #about .item {
@@ -523,7 +519,7 @@ h1 {
     background: rgb(255, 255, 255);
     background: linear-gradient(90deg, rgba(255, 255, 255, 0) 0%, rgba(0, 0, 0, 0.2) 100%);
     padding: 35px;
-    margin-bottom: 50px;
+    margin-bottom: 20px;
 }
 
 #reviews .item-review .user-avatar,
@@ -549,6 +545,24 @@ h1 {
 #reviews .item-review .item-review__body {
     font-family: 'RobotoSlab Thin';
     margin: 20px 0;
+}
+
+#reviews .item-review .item-review__footer a {
+    text-decoration: none;
+    color: #303335;
+}
+
+#reviews .item-review .item-review__footer a:hover {
+    text-decoration: underline;
+}
+
+#reviews .quick-order a {
+    clip-path: polygon(0 0, 95% 0, 100% 50%, 5% 50%);
+    width: 35%;
+    height: 100px;
+    line-height: 50px;
+    font-size: 30px !important;
+    display: inline-block;
 }
 
 /* Reviews End */
