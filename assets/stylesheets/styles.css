@@ -10,7 +10,6 @@
 @import url("screen.css");
 
 /* Common */
-
 body {
     font-family: 'RobotoSlab Regular';
     color: #303335;
@@ -73,15 +72,12 @@ h1 {
 #stocks .list-items {
     margin: 60px 0;
 }
-
 /* Common End */
 
 /* Main */
-
 #main .red-lines__bg {
     background: url("../images/red-lines__bg.png") top left no-repeat;
     width: 100%;
-    /*height: 750px;*/
     height: 100vh;
     position: absolute;
     background-size: contain;
@@ -301,11 +297,9 @@ h1 {
     right: 350px;
     bottom: 90px;
 }
-
 /* Main End */
 
 /* About */
-
 #about .streak {
     background: url("../images/about-redline.png") no-repeat;
     background-size: contain;
@@ -354,11 +348,9 @@ h1 {
     font-family: 'RobotoSlab Thin';
     font-size: 20px;
 }
-
 /* About End */
 
 /* Catalog */
-
 #catalog {
     background: url("../images/catalog-bg.jpg") no-repeat;
     background-size: cover;
@@ -510,11 +502,9 @@ h1 {
     font-size: 30px !important;
     display: inline-block;
 }
-
 /* Catalog End */
 
 /* Reviews */
-
 #reviews .reviews-before {
     content: '';
     clip-path: polygon(0 0, 100% 0, 50% 100%, 50% 100%);
@@ -578,11 +568,9 @@ h1 {
     font-size: 30px !important;
     display: inline-block;
 }
-
 /* Reviews End */
 
 /* Recommend */
-
 #recommend {
     background: url("../images/recommend-bg.jpg") center;
     background-size: cover;
@@ -651,11 +639,9 @@ h1 {
     font-size: 24px;
     margin: unset;
 }
-
 /* Recommend End */
 
 /* Stocks */
-
 #stocks .stocks-before {
     content: '';
     clip-path: polygon(0 0, 100% 0, 50% 100%, 50% 100%);
@@ -705,11 +691,9 @@ h1 {
     font-size: 30px !important;
     display: inline-block;
 }
-
 /* Stocks End */
 
 /* Support */
-
 #support {
     background: url("../images/support-bg.png") top 10% center;
     background-size: cover;
@@ -796,13 +780,26 @@ h1 {
     font-size: 30px !important;
     display: inline-block;
 }
-
 /* Support End */
 
 /* Contacts */
-
 #contacts {
     font-family: 'RobotoSlab Thin';
+    position: relative;
+}
+
+#contacts .contacts-before {
+    content: '';
+    clip-path: polygon(0 0, 100% 0, 50% 100%, 50% 100%);
+    background: rgb(226, 14, 23);
+    background: linear-gradient(90deg, rgba(180, 19, 84, 1) 0%, rgba(226, 14, 23, 1) 100%);
+    position: absolute;
+    width: 85px;
+    height: 75px;
+    z-index: 1;
+    opacity: 85%;
+    right: 120px;
+    top: -25px;
 }
 
 #contacts h1 {
@@ -844,6 +841,18 @@ h1 {
     background: transparent;
 }
 
+#contacts .info-social a {
+    display: block;
+    color: #303335;
+    margin: unset;
+    font-size: 24px;
+    text-decoration: none;
+}
+
+#contacts .info-social a:hover {
+    text-decoration: underline;
+}
+
 #contacts .map-wrapper {
     border: 10px solid;
     border-image-slice: 1;
@@ -856,7 +865,6 @@ h1 {
     text-align: center;
     padding: 30px 0;
 }
-
 /* Contacts End */
 
 svg polygon {
