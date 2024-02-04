@@ -48,7 +48,7 @@ h1 {
 }
 
 #main, #contacts, #stocks, #reviews, #about {
-    background: url("../images/background.jpg") 100%;
+    background: url("../../images/background.jpg") 100%;
 }
 
 #main, #about, #reviews, #recommend, #stocks, #support {
